@@ -1,0 +1,120 @@
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+.hero {
+    background-image: url(../bg-2.jpg);
+    height: 500px;
+    background-size: cover; /*serve para travar a imagem em uma posicao, com isso a imagem fica meio que fixa na posicao com o aumento e dimuicao da pagina ela vai dando zoom ou nao*/
+    background-position: bottom center; /*serve para trancar a imagem aonde voce quer, eu particularmente nao sabia que dava pra colocar dois valores ;O */
+    padding-top: 1px; /*esse padding serve para consertar o bug da margem que aconteceu na ul*/
+}
+
+.hero-content{
+    margin: 50px auto 0;
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1{
+    font-size: 56px;
+    text-shadow: 2px 2px 2px black; /*essa propriedade serve para dar sombra no texto como o proprio nome ja diz*/
+    text-transform: uppercase;
+}
+
+.hero-content p{
+    background-color: rgba(0, 0, 0, 0.699);
+    font-size: 18px;
+    display: inline-block; /*ele faz o background  ficar do tamanho do conteudo*/
+    padding: 10px; /*ele faz criar uma bordinha no conteudo, um espacamento melhor dizendo*/
+    border-bottom: 2px solid white;
+}
+
+.hero nav ul{
+    margin: 20px 50px 0 0; /*como ja vimos isso é a margem que a gente cria, primeiro é a esquerda segundo altura dps baixo e direita*/
+    text-align: right ;
+}
+
+.hero nav li{
+    display: inline-block; /*serve para transformar a lista em um elemento de linha*/
+    border: 1px solid white; /*criou uma borda no meu projeto*/
+}
+
+.hero nav a {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    display: block; /*serve para consertar a margem criada anteriormente, sem isso ela fica deslocada */
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px; /*serve para dar espacamento entre as letras*/
+}
+
+.hero nav a:hover { /*como ja vimos serve para modificar quando o mouse esta em cima do link*/
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.hero nav a:active { /*serve para modifcar quando clica o mouse */
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+main {
+    width: 80%; /*serve para eu determinar o quanto minha pagina vai ocupar, 
+    porem ela ocupa somente a parte esquerda*/
+    margin: auto; /*o margem auto coloca uma margem no comeco do meu conteudo 
+    consertando o width*/
+    /*min-width: none; o min width serve para determinar um minimo de pixels que o meu width
+    ocupa*/
+    max-width: 860px; /*serve para eu determinar o max de pixels para o meu width*/
+
+}
+
+article {
+    background-color: white;
+    padding: 16px; /*serviu para dar um distaciamento do backgroud do texto*/
+    margin-bottom: 32px; /*serviu para distanciar um texto do outro na parte de baixo*/
+    margin-top: 32px; /*serviu para distaciar o texto do outro mas na parte de cima detalhe
+    bem importante que como podemos ver as margens não se somam, elas só se sobrepoem*/
+
+}
+
+article h2{
+    border-bottom: 2px solid #ccc; /*ele criou uma linha embaixo do meu texto, repare que 
+    se eu nao colocasse o solid e a cor ele so iria se distanciar */
+    background-color: #eee;
+    padding: 10px; /*serviu para distanciar um pouco mais o meu texto das bordas*/
+    margin-top: 0; /*eu retirei a margim de cima do meu texto subindo um pouco ele 
+    grudando ele no paddind do article*/
+
+}
+
+article a {
+    background-color: #cdc7c3;
+    display: block; /*serve para não se misturar com o texto acima*/
+    padding: 12px ; /*aumentou um pouco meu background*/
+    border-radius: 6px; /*criou uma bordinha arredondada, o quantidade de pixels determina o raio*/
+    border left: 550px; /*serviu só para colocar o link na direita */
+    width: fit-content; /*essa propriedade faz a borda se adequar ao texto muito util lembra disso, evita trampo a mais desnecessario*/
+    text-decoration: none;
+    margin-left: auto;
+
+
+
+}
+article a:hover {
+    background-color: #b6b2b2;
+}
+article a:active{
+    background-color: #868585;
+}
+
+footer{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding: 16px;
+    background-color: #868585;
+    text-align: center;
+}
